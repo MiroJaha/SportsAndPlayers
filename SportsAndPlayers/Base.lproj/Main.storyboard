@@ -32,14 +32,10 @@
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6d-XS-Hpg">
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="120" id="dNb-Qd-h3a"/>
-                                                <constraint firstAttribute="width" constant="120" id="jN0-CL-9GW"/>
-                                            </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="ADD IMAGE"/>
                                             <connections>
-                                                <action selector="addImgaeButtonClicked:" destination="KU0-EZ-kkY" eventType="touchUpInside" id="khy-j9-pxD"/>
+                                                <action selector="addImgaeButtonClicked:" destination="KU0-EZ-kkY" eventType="touchUpInside" id="BzQ-63-CYl"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soprt" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhL-aO-SGA">
@@ -54,6 +50,7 @@
                                         <constraint firstItem="PhL-aO-SGA" firstAttribute="top" secondItem="HWD-Dm-xoH" secondAttribute="topMargin" id="GYe-ed-N6c"/>
                                         <constraint firstItem="y6d-XS-Hpg" firstAttribute="top" secondItem="HWD-Dm-xoH" secondAttribute="top" id="Ilv-hV-e2Z"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="PhL-aO-SGA" secondAttribute="bottom" id="KOj-1B-CRh"/>
+                                        <constraint firstItem="aPG-Vp-ih4" firstAttribute="trailing" secondItem="y6d-XS-Hpg" secondAttribute="trailing" id="ZHd-3e-9SV"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="PhL-aO-SGA" secondAttribute="trailing" id="aIf-iP-O9V"/>
                                         <constraint firstAttribute="bottom" secondItem="y6d-XS-Hpg" secondAttribute="bottom" id="hfQ-WK-cJJ"/>
                                         <constraint firstItem="aPG-Vp-ih4" firstAttribute="top" secondItem="HWD-Dm-xoH" secondAttribute="top" id="jze-SO-hFW"/>
@@ -75,10 +72,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sports" id="UZ3-rY-EM7">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="wZ1-tJ-Vcn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="wZ1-tJ-Vcn">
+                            <connections>
+                                <action selector="addNewSport:" destination="woJ-h4-KOW" id="gcQ-rO-y0Y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="4cF-W7-rdJ" kind="show" id="9Gf-mm-Dj5"/>
+                        <segue destination="4cF-W7-rdJ" kind="show" identifier="PlayersSegue" id="9Gf-mm-Dj5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GeG-G3-I10" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -109,7 +110,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="7hl-qH-Z7T">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="cFA-nh-faA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="cFA-nh-faA">
+                            <connections>
+                                <action selector="addNewPlayer:" destination="4cF-W7-rdJ" id="7Vo-cA-bzW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcM-QG-Np6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -19,6 +19,7 @@
 		849048842776693B003E993D /* SportsAndPlayersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849048832776693B003E993D /* SportsAndPlayersUITestsLaunchTests.swift */; };
 		8490489127766AB6003E993D /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490489027766AB6003E993D /* PlayersTableViewController.swift */; };
 		8490489327766E71003E993D /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490489227766E71003E993D /* SportsTableViewCell.swift */; };
+		849048962777AFDF003E993D /* SportsAndPlayersDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849048952777AFDF003E993D /* SportsAndPlayersDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		849048832776693B003E993D /* SportsAndPlayersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAndPlayersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8490489027766AB6003E993D /* PlayersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewController.swift; sourceTree = "<group>"; };
 		8490489227766E71003E993D /* SportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
+		84904894277793D0003E993D /* SportsAndPlayers2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportsAndPlayers2.xcdatamodel; sourceTree = "<group>"; };
+		849048952777AFDF003E993D /* SportsAndPlayersDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAndPlayersDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 				8490485F2776693A003E993D /* SceneDelegate.swift */,
 				8490489027766AB6003E993D /* PlayersTableViewController.swift */,
 				849048612776693A003E993D /* SportsTableViewController.swift */,
+				849048952777AFDF003E993D /* SportsAndPlayersDelegate.swift */,
 				8490489227766E71003E993D /* SportsTableViewCell.swift */,
 				849048632776693A003E993D /* Main.storyboard */,
 				849048692776693B003E993D /* Assets.xcassets */,
@@ -272,6 +276,7 @@
 				8490489327766E71003E993D /* SportsTableViewCell.swift in Sources */,
 				849048602776693A003E993D /* SceneDelegate.swift in Sources */,
 				849048682776693A003E993D /* SportsAndPlayers.xcdatamodeld in Sources */,
+				849048962777AFDF003E993D /* SportsAndPlayersDelegate.swift in Sources */,
 				8490489127766AB6003E993D /* PlayersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,9 +626,10 @@
 		849048662776693A003E993D /* SportsAndPlayers.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				84904894277793D0003E993D /* SportsAndPlayers2.xcdatamodel */,
 				849048672776693A003E993D /* SportsAndPlayers.xcdatamodel */,
 			);
-			currentVersion = 849048672776693A003E993D /* SportsAndPlayers.xcdatamodel */;
+			currentVersion = 84904894277793D0003E993D /* SportsAndPlayers2.xcdatamodel */;
 			path = SportsAndPlayers.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
